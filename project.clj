@@ -1,5 +1,5 @@
-(defproject optimus-autoprefixer "0.1.0-SNAPSHOT"
-  :description "Autoprefixer, CSS prefixing for Optimus."
+(defproject optimus-autoprefixer "0.1.0"
+  :description "CSS prefixing via autoprefixer for Optimus."
   :url "http://github.com/magnars/optimus-autoprefixer"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}

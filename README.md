@@ -4,8 +4,7 @@ A [autoprefixer](https://github.com/postcss/autoprefixer) CSS prefix middleware 
 
 ## Install
 
-- Add `[optimus-autoprefixer "0.1.0"]` to `:dependencies` in your `project.clj`.
-- It requires Optimus version minimum `0.13.6`.
+Add `[optimus-autoprefixer "0.1.0"]` to `:dependencies` in your `project.clj`.
 
 ## Usage
 

@@ -23,7 +23,7 @@ Then use this in place of `optimizations/all` in your `optimus/wrap` statement:
 ```clj
 (-> app
     (optimus/wrap get-assets
-                  (if (= :prod env) optimize optimizations/none)
+                  (if (= :prod env) optimize-all optimizations/none)
                   (if (= :prod env) strategies/serve-frozen-assets strategies/serve-live-assets)))
 ```
 

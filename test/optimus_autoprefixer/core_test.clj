@@ -22,12 +22,12 @@
 (fact
  "It throws exceptions"
  (prefix-css "body {")
- => (throws Exception "<css input>:1:1: Unclosed block"))
+ => (throws Exception "<css input>:1:1: Unclosed block (line 1, col -1)"))
 
 (fact
  "It includes path in error messages."
  (prefix-css-assets [{:path "style.css" :contents "body {"}])
- => (throws Exception "Exception in style.css: <css input>:1:1: Unclosed block"))
+ => (throws Exception "Exception in style.css: <css input>:1:1: Unclosed block (line 1, col -1)"))
 
 (fact
  "You can specify browsers"

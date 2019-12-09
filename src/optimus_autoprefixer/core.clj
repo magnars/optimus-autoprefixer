@@ -16,9 +16,9 @@
 
 (defn- prefix-code [css options]
   (let [opts (if-let [browsers (seq (:browsers options))]
-               (str "{ browsers: ['" (str/join "', '" browsers) "']}")
+               (str "{ overrideBrowserslist: ['" (str/join "', '" browsers) "']}")
                "{}")]
-    (str "autoprefixer.process('" (escape (normalize-line-endings css)) "', " opts ").css;")))
+    (str "autoprefixer.process('" (escape (normalize-line-endings css)) "', {}, " opts ").css;")))
 
 (def autoprefixer
   (slurp (clojure.java.io/resource "autoprefixer.js")))

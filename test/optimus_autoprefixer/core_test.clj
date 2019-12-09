@@ -32,9 +32,9 @@
 (fact
  "You can specify browsers"
 
- (prefix-css "body { transform: rotate(45deg); }" {:browsers ["last 2 versions"]})
+ (prefix-css "body { transform: rotate(45deg); }" {:browsers ["Edge 16"]})
  => "body { transform: rotate(45deg); }"
 
  (prefix-css-assets [{:path "style.css" :contents "body { transform: rotate(90deg); }"}]
-                    {:browsers ["last 2 versions"]})
+                    {:browsers ["Edge 16"]})
  => [{:path "style.css" :contents "body { transform: rotate(90deg); }"}])
